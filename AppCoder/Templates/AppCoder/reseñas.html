@@ -4,4 +4,15 @@ Reseñas
 {% endblock %}
 {% block content %}
 <p>PROYECTO FINAL CODERHOUSE - GRUPO 2 - Jeremías Ruiz / Jesús Lacruz Andrade / Joaquín Alonso</p>
+<h1>Escribí tu Reseña</h1>
+    <form action="/reseñas" method="POST">{% csrf_token %}
+      <div><h3>Mensaje</h3><input type="text" name="" id=""></div>
+      <div><h3>Email</h3><input type="text" name="" id=""></div>
+      <div><h3>Fecha</h3><input type="text" name="" id=""></div></br>
+      <input type="submit" value="Enviar">
+    </form>
 {% endblock %}
+
+
+
+

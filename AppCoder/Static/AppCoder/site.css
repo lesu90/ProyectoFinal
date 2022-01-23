@@ -27,4 +27,6 @@
 }
 
 
-
+input[name=message] {
+    width: 80%;
+}
