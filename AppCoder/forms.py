@@ -2,10 +2,10 @@
 import email
 from django.forms import Form, CharField, IntegerField, EmailField,DateField
 
-class registroForm(Form):
-  nameForm:CharField()
-  emailForm:EmailField()
-  dateForm:DateField()
+class RegistroForm(Form):
+  Nombre=CharField()
+  Email=EmailField()
+  Fecha=DateField()
 
 #class ReseñasForm(Form):
  #   Mensaje = CharField()

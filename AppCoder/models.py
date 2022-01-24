@@ -24,6 +24,12 @@ class Registro(models.Model):
     nombreRegis = models.CharField(max_length=300)
     emailRegis = models.EmailField(max_length=300)
     fechaDeNacimientoRegis = models.DateField() 
+    
+    def __str__(self):
+        return f""" Nombre de Usuario:  {self.nombreRegis}- 
+                    Email:  {self.emailRegis}-
+                    Fecha de naciemiento:  ({self.fechaDeNacimientoRegis})-
+                    Bienvenido  {self.nombreRegis}"""
 
     
     
