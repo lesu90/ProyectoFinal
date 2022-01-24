@@ -1,7 +1,13 @@
 
-#from django.forms import Form, CharField, IntegerField, EmailField
+import email
+from django.forms import Form, CharField, IntegerField, EmailField,DateField
 
-#''' class ReseñasForm(Form):
+class registroForm(Form):
+  nameForm:CharField()
+  emailForm:EmailField()
+  dateForm:DateField()
+
+#class ReseñasForm(Form):
  #   Mensaje = CharField()
   #  Email = IntegerField() '''
 
@@ -11,6 +17,6 @@
   #  apellido = CharField(max_length=30)
    # email = EmailField()
     #profesion = CharField(max_length=30)
-    
-    
+
+
     

@@ -13,16 +13,18 @@ class reseñas(models.Model):
     Mensaje = models.CharField(max_length=300)
     Email = models.EmailField(max_length=300)
     Fecha = models.DateTimeField("date logged") 
-    
-###Lo hizo Joaquin
-class reseñas(models.Model):
-    nombre = models.CharField(max_length=300)
-    Email = models.EmailField(max_length=300)
-    Fecha = models.DateTimeField() 
-#def __str__(self):
+    #def __str__(self):
 #        """Returns a string representation of a message."""
  #       date = timezone.localtime(self.log_date)
   #      return f"'{self.message}' logged on {date.strftime('%A, %d %B, %Y at %X')}"
+  
+  
+###Lo hizo Joaquin
+class Registro(models.Model):
+    nombreRegis = models.CharField(max_length=300)
+    emailRegis = models.EmailField(max_length=300)
+    fechaDeNacimientoRegis = models.DateField() 
+
     
     
     

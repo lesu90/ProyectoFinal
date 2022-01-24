@@ -7,6 +7,8 @@ urlpatterns = [
     
     path("registro/", views.registro, name="registro"),
     
+    path("usuarios/", views.Usuarios, name="usuarios"),
+    
     path("contacto/", views.contacto, name="contacto"),
     
     path("reseñas/", views.reseñas, name="reseñas"),
