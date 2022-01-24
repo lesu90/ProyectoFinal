@@ -42,6 +42,10 @@ def registro(request):
 ###############################################################################################################
 def Usuarios(request):
     return render(request, "AppCoder/usuarios.html",{'usuarios':Registro.objects.all()})
+    
+def busquedaUsuarios(request):
+    busqueda=f"Usuario es: {request.GET['Nombre']}"
+    return HttpResponse(busqueda)
 ###############################################################################################################
 
 
